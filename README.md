@@ -4,7 +4,7 @@
 
 #2 
 
-`follow the instructions in this` [table](https://github.com/rufai/tuo)
+`follow the instructions in this` [table](https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design#define-api-operations-in-terms-of-http-methods)
 
 #3
 

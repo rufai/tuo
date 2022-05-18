@@ -34,14 +34,14 @@ function searchMovies(req,res){
        const genreName=query.genre;
         
         searchedMovie=movies_db.movies.filter((movie)=>{
-            let convertedText=[]
+//            let convertedText=[]
             
             //changes the genre strings to lowercase
-            movie.genres.forEach((item)=>{
-               convertedText.push(item.toLowerCase()) 
-            })
+//            movie.genres.forEach((item)=>{
+//               convertedText.push(item.toLowerCase()) 
+//            })
             
-            return convertedText.includes(genreName)
+            return movie.genres.includes(genreName)
         })
         
        

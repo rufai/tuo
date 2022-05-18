@@ -4,13 +4,13 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/charles.css')
   body
-    nav
+    nav(class="main-nav")
         ul
             li
                a(href='/') Home 
                
             each genre in allGenres
                 li
-                    a= genre
+                    a(href=`http://localhost:3000/movies/search?genre=${genre}`)= genre
                     
     block remainder

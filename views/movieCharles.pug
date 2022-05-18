@@ -1,12 +1,12 @@
 extends layoutCharles
 
 block remainder
-    section
+    section(class="moviesContainer")
         each movie in searchedMovie
-            div
-                
+            div(class="movieCard")
+                img(src=movie.posterUrl class="theImage")
                 p=movie.title
                 p=movie.year
                 a(href=`http://localhost:3000/movies/reviews?search=${movie.title}`)
-                    h3 See reviews
+                    h3 See possible reviews
                 

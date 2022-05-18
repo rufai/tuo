@@ -1,0 +1,12 @@
+extends layoutCharles
+
+block remainder
+    section
+        each movie in searchedMovie
+            div
+                
+                p=movie.title
+                p=movie.year
+                a(href=`http://localhost:3000/movies/reviews?search=${movie.title}`)
+                    h3 See reviews
+                

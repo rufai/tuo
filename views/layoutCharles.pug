@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/charles.css')
+  body
+    nav
+        ul
+            li
+               a(href='/') Home 
+               
+            each genre in allGenres
+                li
+                    a= genre
+                    
+    block remainder

@@ -1,0 +1,16 @@
+extend layout
+
+block content
+    h1 success 
+
+    ol 
+        each product in film
+            li
+                div 
+                    p= product.actors 
+                    h3= product.year
+                    p= product.title 
+                    img(
+                        src= product.posterUrl
+                        width= 200
+                    )
